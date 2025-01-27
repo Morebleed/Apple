@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanuman:wght@100;300;400;700;900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+header {
+  background-color: #f5f5f7cc;
+  gap: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Inter", serif;
+}
+.nav_items {
+  display: flex;
+  gap: 20px;
+  text-decoration: none;
+  padding: 10px;
+}
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.menu {
+  display: none;
+}
+
+.hero {
+  width: 100vw;
+  height: 692px;
+  background: url("./IMG/Figure.png") center/cover no-repeat;
+}
+
+@media only screen and (max-width: 768px) {
+  .nav_items {
+    display: none;
+  }
+  .menu {
+    display: block;
+  }
+  .hero {
+    background: url("./IMG/Figure@2x.png") center/cover no-repeat;
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  .nav_items {
+    display: none;
+  }
+  .menu {
+    display: block;
+  }
+  .hero {
+    width: 100vw;
+    height: 692px;
+    background-image: url("./IMG/Figure11.png") center/cover no-repeat;
+  }
+}
