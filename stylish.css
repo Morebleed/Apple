@@ -25,7 +25,7 @@ header {
 
 .hero {
   width: 100vw;
-  height: 692px;
+
   background: url("./IMG/Figure.png") center/cover no-repeat;
   justify-content: center;
   text-align: center;
@@ -61,14 +61,12 @@ header {
 .sidekick {
   background: url("./IMG/Figure (1).png") center/cover no-repeat;
   width: 100vw;
-  height: 692px;
   justify-content: center;
   text-align: center;
   font-family: "inter", serif;
 }
 .thirdhero {
   width: 100vw;
-  height: 692px;
   gap: 10px;
   background: url("./IMG/Figure (2).png") center/cover no-repeat;
   display: flex;
@@ -108,7 +106,11 @@ header {
 .config {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+}
+.family {
+  font-family: "inter", serif;
 }
 .first {
   height: 580px;
@@ -119,9 +121,19 @@ header {
   font-weight: 400;
   font-size: 42px;
 }
+.second {
+  display: flex;
+  justify-content: flex-end;
+}
+
 .air {
   background: linear-gradient(90deg, #0090f7 0%, #ba62fc 50%, #f2416b 100%);
   background-clip: text;
+}
+.rainbow {
+  background: linear-gradient(90deg, #0090f7 0%, #ba62fc 50%, #f2416b 100%);
+  background-clip: text;
+  padding-top: 360px;
 }
 .second {
   height: 580px;
@@ -142,6 +154,25 @@ header {
 .sixth {
   height: 580px;
   background: url("./IMG/Figure (8).png") center/cover no-repeat;
+}
+.slid {
+  gap: 20px;
+  width: 100vw;
+  display: flex;
+  overflow-x: scroll;
+}
+.cate {
+  width: 1250px;
+  height: 668px;
+  background: url("./IMG/036fa4ebdb97754279e6264a8511c26a.jpeg");
+}
+.moon {
+  width: 1250px;
+  background: url("./IMG/6c1f9e35f8cfc952ddd2340d8debbb86.jpeg");
+}
+.gun {
+  width: 1250px;
+  background: url("./IMG/cffc7341eddba9393942d27673a1bb78.jpeg");
 }
 @media only screen and (max-width: 768px) {
   .nav_items {
