@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Hanuman:wght@100;300;400;700;900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playwrite+IN:wght@100..400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 header {
   background-color: #f5f5f7cc;
   display: flex;
@@ -10,6 +15,7 @@ header {
 .nav_items {
   display: flex;
   gap: 20px;
+  flex-wrap: wrap;
   text-decoration: none;
   padding: 10px;
 }
@@ -22,18 +28,19 @@ header {
 .menu {
   display: none;
 }
-
-.hero {
+.hconfig {
   width: 100vw;
-
-  background: url("./IMG/Figure.png") center/cover no-repeat;
+  height: 692px;
   justify-content: center;
   text-align: center;
   font-family: "inter", serif;
+  padding-top: 50px;
+}
+.hero {
+  background: url("./IMG/Figure.png") center/cover no-repeat;
 }
 .promo {
   color: white;
-  font-weight: 600;
   font-size: 52px;
 }
 .up {
@@ -46,7 +53,7 @@ header {
   border-radius: 50px;
   padding: 12px 20px 12px 20px;
   color: white;
-  border-color: solid #0071e3;
+  border: 1px blue;
 }
 .shortbutton {
   opacity: 100%;
@@ -60,13 +67,10 @@ header {
 
 .sidekick {
   background: url("./IMG/Figure (1).png") center/cover no-repeat;
-  width: 100vw;
-  justify-content: center;
-  text-align: center;
-  font-family: "inter", serif;
 }
 .thirdhero {
   width: 100vw;
+  height: 692px;
   gap: 10px;
   background: url("./IMG/Figure (2).png") center/cover no-repeat;
   display: flex;
@@ -118,39 +122,74 @@ header {
 }
 .pad {
   font-family: "inter", serif;
-  font-weight: 400;
-  font-size: 42px;
+  font-weight: 700;
+  font-size: 32px;
 }
-.second {
-  display: flex;
-  justify-content: flex-end;
-}
-
 .air {
-  background: linear-gradient(90deg, #0090f7 0%, #ba62fc 50%, #f2416b 100%);
+  font-weight: 400;
+  font-size: 32px;
+  background: linear-gradient(90deg, #0090f7 0%, #3b3bd6cc);
   background-clip: text;
+  color: transparent;
+  font-family: "Playwrite", sans-serif;
+  margin-left: 10px;
+}
+.flex {
+  display: flex;
 }
 .rainbow {
   background: linear-gradient(90deg, #0090f7 0%, #ba62fc 50%, #f2416b 100%);
   background-clip: text;
   padding-top: 360px;
+  color: transparent;
 }
 .second {
   height: 580px;
   background: url("./IMG/Figure (4).png") center/cover no-repeat;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  align-items: center;
+  color: white;
 }
 .third {
   height: 580px;
   background: url("./IMG/Figure (5).png") center/cover no-repeat;
 }
+.wa {
+  font-family: "inter", sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+}
+.ser {
+  font-family: "inter", sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+}
+.classic {
+  font-family: "inter", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+}
 .fourth {
   height: 580px;
   background: url("./IMG/Figure (6).png") center/cover no-repeat;
+}
+.book {
+  font-family: "inter", sans-serif;
+  font-weight: 600;
+  font-size: 36px;
+}
+.mchip {
+  font-family: "inter", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
 }
 .fifth {
   height: 580px;
   background: url("./IMG/Figure (7).png") center/cover no-repeat;
 }
+
 .sixth {
   height: 580px;
   background: url("./IMG/Figure (8).png") center/cover no-repeat;
@@ -160,29 +199,75 @@ header {
   width: 100vw;
   display: flex;
   overflow-x: scroll;
+  align-items: center;
+  scroll-snap-type: x mandatory;
+  scroll-snap-align: center;
+  scrollbar-width: none;
+  margin-top: 20px;
 }
 .cate {
   width: 1250px;
   height: 668px;
+  flex-shrink: 0;
   background: url("./IMG/036fa4ebdb97754279e6264a8511c26a.jpeg");
 }
 .moon {
   width: 1250px;
+  height: 668px;
+  flex-shrink: 0;
   background: url("./IMG/6c1f9e35f8cfc952ddd2340d8debbb86.jpeg");
 }
 .gun {
   width: 1250px;
+  height: 668px;
+  flex-shrink: 0;
   background: url("./IMG/cffc7341eddba9393942d27673a1bb78.jpeg");
 }
-@media only screen and (max-width: 768px) {
+.blue-text {
+  color: #0090f7;
+}
+.overlay {
+  gap: 20px;
+  width: 100vw;
+  display: flex;
+  overflow-x: scroll;
+  align-items: center;
+  scroll-snap-type: x mandatory;
+  scroll-snap-align: center;
+  scrollbar-width: none;
+  margin-top: 20px;
+}
+.kitty {
+  width: 417px;
+  height: 236px;
+  background: url("./IMG/834x472.jpg") center/cover;
+  flex-shrink: 0;
+}
+.basket {
+  width: 417px;
+  height: 236px;
+  background: url("./IMG/834x472 (2).jpg") center/cover;
+  flex-shrink: 0;
+}
+.illust {
+  width: 417px;
+  height: 236px;
+  background: url("./IMG/834x472 (1).jpg") center/cover;
+  flex-shrink: 0;
+}
+.forsmalldevs {
+  display: none;
+}
+@media only screen and (max-width: 833px) {
+  .forsmalldevs {
+    width: 100vw;
+    height: 48px;
+  }
   .nav_items {
     display: none;
   }
-  .menu {
-    display: block;
-  }
   .hero {
-    background: url("./IMG/Figure@2x.png") center/cover no-repeat;
+    background: url("./IMG/pad.png") center/cover no-repeat;
   }
 }
 
@@ -190,12 +275,9 @@ header {
   .nav_items {
     display: none;
   }
-  .menu {
-    display: block;
-  }
   .hero {
     width: 100vw;
     height: 692px;
-    background-image: url("./IMG/Figure11.png") center/cover no-repeat;
+    background: url("./IMG/Figure11.png") center/cover no-repeat;
   }
 }
