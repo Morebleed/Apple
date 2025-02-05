@@ -37,13 +37,20 @@ header {
   justify-content: space-between;
   background-color: #ffff;
 }
-
 .store {
   height: 585px;
 }
-
+.intro{
+  display: flex;
+}
+.support{
+  margin-left: auto;
+}
 .rainbow {
   display: inline;
+  font-weight: 700;
+  font-size: 44px;
+  
   color: transparent;
   background: linear-gradient(
     90deg,
@@ -55,7 +62,16 @@ header {
   );
   background-clip: text;
 }
+.gift{
+  font-weight: 700;
+  font-size: 44px;
+}
 
+.products{
+  display: flex;
+  justify-content: flex-end;
+  align-content: center;
+}
 .product {
   height: 78px;
   width: 120px;
