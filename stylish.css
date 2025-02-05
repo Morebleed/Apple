@@ -5,18 +5,9 @@
   box-sizing: border-box;
 }
 :root {
-  
 }
-header {
-  background-color: #f5f5f7cc;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  font-family: "Inter", serif;
-}
-.main:hover{
-opacity: .7;
+.main:hover {
+  opacity: 0.7;
 }
 .nav_items {
   display: flex;
@@ -264,7 +255,7 @@ opacity: .7;
 .forsmalldevs {
   display: none;
 }
-.device{
+.device {
   display: none;
 }
 @media only screen and (max-width: 833px) {
@@ -277,20 +268,20 @@ opacity: .7;
     text-decoration: none;
     padding: 10px;
   }
-  .space{
+  .space {
     margin-left: auto;
   }
   .nav_items {
     display: none;
   }
-  .sixpack{
+  .sixpack {
     display: none;
   }
   .hero {
     background: url("./IMG/pad.png") center/cover no-repeat;
   }
-  .sidekick{
-    background: url("./IMG/side.png")center/cover no-repeat;
+  .sidekick {
+    background: url("./IMG/side.png") center/cover no-repeat;
   }
   .device {
     width: 100vw;
@@ -299,42 +290,40 @@ opacity: .7;
     grid-template-rows: repeat(3, 580px);
     gap: 10px;
   }
-  .first{
-    background: url("./IMG/black.jpg")center/cover no-repeat;
+  .first {
+    background: url("./IMG/black.jpg") center/cover no-repeat;
     display: flex;
     justify-content: flex-end;
     flex-direction: column;
     align-items: center;
     color: white;
   }
-  .aid{
-    ;
+  .aid {
     font-size: 18px;
   }
-  .watch{
-    background: url("./IMG/watch.jpg")center/cover no-repeat;
+  .watch {
+    background: url("./IMG/watch.jpg") center/cover no-repeat;
   }
-  .third{
-    background: url("./IMG/dd.jpg")center/cover no-repeat;
+  .third {
+    background: url("./IMG/dd.jpg") center/cover no-repeat;
   }
-  .fourth{
-    background: url("./IMG/aa.png")center/cover no-repeat;
+  .fourth {
+    background: url("./IMG/aa.png") center/cover no-repeat;
   }
-  .fifth{
+  .fifth {
     width: 366px;
     height: 490px;
-    background: url("./IMG/www.jpg")center/cover no-repeat;
+    background: url("./IMG/www.jpg") center/cover no-repeat;
     display: flex;
     justify-content: flex-end;
     flex-direction: column;
     align-items: center;
-    flex-wrap: wrap
+    flex-wrap: wrap;
   }
-  .sixth{
-    background: url("./IMG/ra.jpg")center/cover no-repeat;
+  .sixth {
+    background: url("./IMG/ra.jpg") center/cover no-repeat;
   }
 }
-
 
 @media only screen and (max-width: 390px) {
   .nav_items {
@@ -349,13 +338,16 @@ opacity: .7;
     text-decoration: none;
     padding: 10px;
   }
-  .sixpack{
+  .sixpack {
+    display: none;
+  }
+  .device {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(6, 580px);
     gap: 10px;
   }
-  .space{
+  .space {
     margin-left: auto;
   }
   .hero {
@@ -363,7 +355,7 @@ opacity: .7;
     height: 692px;
     background: url("./IMG/Figure11.png") center/cover no-repeat;
   }
-  .sidekick{
+  .sidekick {
     background: url("./IMG/gas.jpg") center/cover no-repeat;
   }
 }
